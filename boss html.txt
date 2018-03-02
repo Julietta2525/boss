@@ -1,0 +1,50 @@
+<! DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="BOSS_QR.css">
+	</head>
+
+	<div class="redBox">
+		<img class="ktnLogo" src="ktnwhiteonredlogo.jpg" alt="KTN Logo" />
+	
+		<div class="titleHead"><b>B.O.S.S.</b></div>
+		<div class="titleSubHead">Business Operational & System Support</div>
+	
+	</div>
+	
+	<body>
+	
+		<div class="mission">
+			<div class="missionTag"><b>Our Mission</b></div>
+			<div class="statement">The BOSS team uses its mix of operational, administrative, and system 
+			knowledge to support existing system usage and to coordinate the needs for 
+			successful new system implementation by beiding the gap between system 
+			development and users from different <a href=# >NAFTA sites</a>.</div>
+		</div>
+		
+		<div class="groupPhoto">
+			<img class="group" src="helmet.jpg" alt="Group Photo" />
+		</div>
+		
+		<div>
+			<div>Current NAFTA KTN Sites</div>
+			<ul>
+				<li>La Porte, TX</li>
+				<li>Baytown, TX</li>
+				<li>Dallas, TX</li>
+				<li>Pensicola, FL</li>
+				<li>Norfolk, VA</li>
+				<li>Edison, NJ</li>
+				<li>Silao, Mexico</li>
+				<li>Huehuetoca, Mexico</li>
+				<li>Altamira, Mexico</li>
+				<li>Pantaco, Mexico</li>
+				<li>Edmonton, Canada</li>
+				<li>Corunna, Canada</li>
+				<li>Mississauga, Canada</li>
+				<li>Lachine, Canada</li>
+				<li>Saint Bruno, Canada</li>
+		</div>
+		
+	</body>
+</html>
