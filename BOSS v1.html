@@ -1,20 +1,25 @@
 <! DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>B.O.S.S.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 		<link rel="stylesheet" type="text/css" href="BOSS v1.css">
 		<script src="BOSS v1.js"></script>
 	</head>
 		
-	<div class="redBox">
-		<img class="ktnLogo" src="/Logos/white png.png" alt="KTN Logo" />
-	
+	<div class="redBox container">
+		<img class="ktnLogo" src="Logos/white png.png" alt="KTN Logo" />
 		<div class="titleHead"><b>B.O.S.S.</b></div>
 		<div class="titleSubHead">Business Operational & System Support</div>
 		<div class="titleSubSubHead">for the NAFTA Region</div>
 	</div>
 
-	<div class="slideshow-container">
+	<div class="slideshow-container container">
 	
 	<!-- Bad quality photos
 		<div class="mySlides fade">
@@ -67,14 +72,14 @@
 			<div class="text">Sarnia, Canada</div>
 		</div>
 
-	<!-- Bad quality photos
+		<!-- Bad quality photos
 		<div class="mySlides fade">
 			<div class="numbertext">9 / 12</div>
 			<img class="backgroundPic" src="SitePhotos/Canada-StBruno.jpg" style="width:100%">
 			<div class="text">St Bruno, Canada</div>
 		</div> -->
 		
-	<!-- Bad quality photos
+		<!-- Bad quality photos
 		<div class="mySlides fade">
 			<div class="numbertext">10 / 12</div>
 			<img class="backgroundPic" src="SitePhotos/Mexico-Altamira2.jpg" style="width:100%">
@@ -87,34 +92,19 @@
 			<div class="text">Mexico City, Mexico</div>
 		</div>
 
-	<!-- Bad quality photos	
+		<!-- Bad quality photos	
 		<div class="mySlides fade">
 			<div class="numbertext">7 / 7</div>
 			<img class="backgroundPic" src="SitePhotos/Mexico-Silao.jpg" style="width:100%">
 			<div class="text">Silao, Mexico</div>
 		</div> -->
 	
-		<div class="mission">
+		<div class="mission container">
 			<div class="missionTag"><b>Our Mission</b></div>
 			<div class="missionStatement">The BOSS team uses its mix of operational, administrative, and system 				knowledge to support existing system usage and to coordinate the needs for 
 			successful new system implementation by beiding the gap between system 
 			development and users from different NAFTA sites.</div>
 		</div>	
-		
-		<div class="dotStyles" style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span> 
-			<span class="dot" onclick="currentSlide(2)"></span> 
-			<span class="dot" onclick="currentSlide(3)"></span> 
-			<span class="dot" onclick="currentSlide(4)"></span> 
-			<span class="dot" onclick="currentSlide(5)"></span> 
-			<span class="dot" onclick="currentSlide(6)"></span> 
-		<!--<span class="dot" onclick="currentSlide(7)"></span> 
-			<span class="dot" onclick="currentSlide(8)"></span> 
-			<span class="dot" onclick="currentSlide(9)"></span> 
-			<span class="dot" onclick="currentSlide(10)"></span> 
-			<span class="dot" onclick="currentSlide(11)"></span> 
-			<span class="dot" onclick="currentSlide(12)"></span> -->
-		</div> 
 	</div>
 	
 	<br>
@@ -126,7 +116,7 @@
 		<span class="dot" onclick="currentSlide(4)"></span> 
 		<span class="dot" onclick="currentSlide(5)"></span> 
 		<span class="dot" onclick="currentSlide(6)"></span> 
-	<!--<span class="dot" onclick="currentSlide(7)"></span> 
+		<!--<span class="dot" onclick="currentSlide(7)"></span> 
 		<span class="dot" onclick="currentSlide(8)"></span> 
 		<span class="dot" onclick="currentSlide(9)"></span> 
 		<span class="dot" onclick="currentSlide(10)"></span> 
@@ -136,37 +126,39 @@
 		
 	<div class="backgroundColorLogo">		
 		<body>
-			<div class="container">
-				<div class="memberContainer">
-					<div class="tab">
-						<button class="tablinks" onclick="openCity(event, 'tm1')" id="defaultOpen">B.O.S.S.</button>
-						<button class="tablinks" onclick="openCity(event, 'tm2')">Team Member 1</button>
-						<button class="tablinks" onclick="openCity(event, 'tm3')">Team Member 2</button>
-						<button class="tablinks" onclick="openCity(event, 'tm4')">Team Member 3</button>
-						<button class="tablinks" onclick="openCity(event, 'tm5')">Team Member 4</button>
-						<button class="tablinks" onclick="openCity(event, 'tm6')">Team Member 5</button>
-						<button class="tablinks" onclick="openCity(event, 'tm7')">Team Member 6</button>
-					</div>
+			<div class="container memberContainer">
+				<div class="tab">
+					<button class="tablinks" onclick="openCity(event, 'tm1')" id="defaultOpen">B.O.S.S.</button>
+					<button class="tablinks" onclick="openCity(event, 'tm2')">Nele Rombaut</button>
+					<button class="tablinks" onclick="openCity(event, 'tm3')">Alexis Artiga</button>
+					<button class="tablinks" onclick="openCity(event, 'tm4')">Diana Delafuente</button>
+					<button class="tablinks" onclick="openCity(event, 'tm5')">Rodrigo Maldonado</button>
+					<button class="tablinks" onclick="openCity(event, 'tm6')">Julia Moon</button>
+					<button class="tablinks" onclick="openCity(event, 'tm7')">Vanessa Trevino</button>
+				</div>
 
-					<div id="tm1" class="tabcontent memberTabcontent">
-						<div class="memberName">Meet the Team</div>
-						<img class="group" src="TeamPhotos/groupphoto.jpg" alt="Group Photo" />
+				<div id="tm1" class="tabcontent">
+					<div class="memberName">News and Events</div>
+					<div class="memberDescription">
+						Here maybe we can put something more news related
+						instead of a group picture. Give it a little more substance.
 					</div>
+				</div>
 				
-					<div id="tm2" class="tabcontent memberTabcontent">
-						<div class="memberName">Team Member Name</div>
-						<div class="memberDescription">Here is a short description of what the team member
-						does for the team including their specialty (invoicing, eOrder, ect.) and any other 
-						informtion. Making the text longer for visual testing. The quick brown fox
-						jumped over the lazy dogs.</div>
-						<div class="memberContactinfo">
-							<img class="memberPhoto" src="TeamPhotos/avatarmale.png" alt="Team Member Photo 1" />
-							<div class="phoneNum">Desk: (123) 456 - 7890</div>
-							<div class="phoneNum">Cell: (098) 765 - 4321</div>
+				<div id="tm2" class="tabcontent memberTabcontent">
+					<div class="memberName">Nele Rombaut</div>
+					<div class="memberDescription">Here is a short description of what the team member
+					does for the team including their specialty (invoicing, eOrder, ect.) and any other 
+					informtion. Making the text longer for visual testing. The quick brown fox
+					jumped over the lazy dogs.</div>
+					<div class="memberContactinfo">
+						<img class="memberPhoto" src="TeamPhotos/avatarmale.png" alt="Team Member Photo 1" />
+						<div class="phoneNum">Desk: N/A</div>
+						<div class="phoneNum">Cell: (832) 551-6617</div>
 						<!-- code adjusted to keep bots from spamming the email addresses -->
-							<div class="email"><a href="mailto:teammember%40company%2edomain">teammember@company.com</a></div>
-						</div>
+						<div class="email"><a href="mailto:teammember%40company%2edomain">nrombaut@ktnusa.com</a></div>
 					</div>
+				</div>
 
 					<div id="tm3" class="tabcontent memberTabcontent">
 						<div class="memberName">Team Member Name 2</div>
@@ -237,16 +229,13 @@
 							<div class="email"><a href="mailto:teammember%40company%2edomain">teammember@company.com</a></div>
 						</div>
 					</div> 
-					
-					<div class="bottomShading"></div>
 	
 					<script>showSlides(slideIndex);</script>
 					<script>document.getElementById("defaultOpen").click();</script>
-	
-					<div class="footer">
-						<div>"At Katoen Natie, Our People Make the Difference"</div>
-					</div>
-				</div>
+			</div>
+
+			<div class="footer container">
+					<div class="footertext">"At Katoen Natie, Our People Make the Difference"</div>
 			</div>
 			
 			<div class="backgroundLogoContainer1">
