@@ -212,16 +212,42 @@ p {
 	font-size: 20px;
 }
 
+.newsSectionTitle {
+	position: relative;
+	top: 325px;
+	left: 350px;
+	text-align: center;
+	color: RGB(237, 28, 36);
+	font-family: avantgarde-book;
+	font-size: 70px;
+	background-color: RGB(225, 225, 225);
+	border-left: 3px solid RGB(237, 28, 36);
+	border-right: 3px solid RGB(237, 28, 36);
+	border-top: 3px solid RGB(237, 28, 36);
+	width: 65%;
+}
+
+.newsSection {
+	position: relative;
+	width: 65%;
+	height: 25%;
+	overflow: auto;
+	top: 315px;
+	left: 350px;
+	z-index: 2;
+	border-left: 3px solid RGB(237, 28, 36);
+	border-right: 3px solid RGB(237, 28, 36);
+	border-bottom: 3px solid RGB(237, 28, 36);
+	background-color: RGB(225, 225, 225);
+}
 
 .memberDescriptionNews {
-    display: inline-block;
-	width: 95%;
 	font-size: 18px;
+	text-align: center;
     height: 75px;
-    margin: 10px;
-	vertical-align: top;
-	padding-top: 15px;
 	font-family: arial;
+	max-width: 93%;
+	padding-left: 20px;
 }
 
 .memberDescription {
