@@ -7,448 +7,474 @@ body {
 	background: radial-gradient(RGB(225, 225, 225), RGB(192, 192, 192));
 }
 
-.backgroundLogoContainer1 {
-	position: absolute;
-	top: 280px;
-	left: 85px;
-	z-index: -1;
-}
-
-.backgroundLogo1 {
-	height: 250px;
-	width: 250px;
-	opacity: .35;
-}
-
-.backgroundLogoContainer2 {
-	position: absolute;
-	top: 280px;
-	right: 85px;
-	z-index: -1;
-}
-
-.backgroundLogo2 {
-	height: 250px;
-	width: 250px;
-	opacity: .35;
-}
-
-.headerBox {
-	position: fixed;
-	width: 100%;
-	background-color: RGB(237, 28, 36);
-	border-bottom: solid;
-	border-bottom-width: 10px;
-	border-bottom-color: RGB(169, 14, 21);
-	top: 0;
-	z-index: 3;
-}
-
-.ktnLogo {
-	position: static;
-	width: 110px;
-	height: 100px;
-	float: left;
-	padding-left: 5px;
-	margin-left: 10px;
-	margin-top: 5px;
-	padding-bottom: 10px;
-}
-
-.titleHead {
-	float: left;
-	text-justify: top;
-	font-size: 70px;
-	font-family: avantgarde-book;
-	text-align: left;
-	color: white;
-	text-shadow: 2px 2px 4px #000000;
-	padding-right: 25px;
-	margin-left: 25px;
-}
-
-.titleSubHead {
-	font-size: 25px;
-	font-family: avantgarde-book;
-	text-align: left;
-	padding-bottom: 1px;
-	margin-top: 15px;
-	color: white;
-}
-
-.backgroundPic {
-	height: 450px;
-	width: 450px;
-	z-index: 0;
-}
-
-.slideshow-container {
-	max-height: 150px;
-	max-width: 50%;
-	margin-top: 125px;
-	position: relative;
-	z-index: 1;
-	padding-bottom: 150px;
-}
-
-.active {
-	background-color: #717171;
-}
-
-.mySlides {
-    display: none;
-}
-
-.text {
-	color: #f2f2f2;
-	font-family: avantgarde-book;
-	font-size: 15px;
-	padding-top: 10px;
-	position: absolute;
-	top: 380px;
-	width: 100%;
-	text-align: center;
-}
-
-.numbertext {
-	color: #f2f2f2;
-	font-family: avantgarde-book;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
-}
-
-.dotStyles {
-	position: absolute;
-	z-index: 1;
-	margin: 250px 0 0 15px;
-	width: 100%;
-}
-	
-.dot {
-	cursor:pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
- .active, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 5.5s;
-  animation-name: fade;
-  animation-duration: 5.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: 1;}
-  to {opacity: 1;}
-}
-
-
-.mission {
-	border: solid;
-	border-width: 3px;
-	border-color: black;
-	margin: 5px 150px 10px 150px;
-	padding: 0 25px 3px 25px;
-	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.5);
-	background-color: RGB(237, 28, 36);
-	position: absolute;
-	top: 25px;
-	width: 70%;
-	z-index: 2;
-}
-
-.missionTag {
-	font-family: avantgarde-book;
-	margin-bottom: 10px;
-	font-size: 25px;
-	color: white;
-	z-index:1;
-}
-
-.missionStatement {
-	font-family: avantgarde-book;
-	color: white;
-	z-index:1;
-}
-
-.group {
-	height: 350px;
-	width: 30%;
-	margin-left: 35%;
-	padding-top: 5px;
-}
-
-.memberContainer {
-	position: relative;
-	margin-top: 400px;
-	width: 85%;
-	height: 20%;
-}
-
-.memberName {
-	text-align: center;
-	padding-top: 5px;
-	font-size: 45px;
-	padding-bottom: -25px;
-	border-bottom: 1px solid RGB(237, 28, 36);
-	border-width: 2px;
-	color: RGB(237, 28, 36);
-	font-family: avantgarde-book;
-}
-
 p {
 	text-align: center;
 	font-size: 20px;
 }
 
-.newsSectionTitle {
-	position: relative;
-	top: 325px;
-	left: 350px;
-	text-align: center;
-	color: RGB(237, 28, 36);
-	font-family: avantgarde-book;
-	font-size: 70px;
-	background-color: white;
-	border-left: 3px solid RGB(237, 28, 36);
-	border-right: 3px solid RGB(237, 28, 36);
-	border-top: 3px solid RGB(237, 28, 36);
-	width: 65%;
-}
+/* Background */
+	.backgroundLogoContainer1 {
+		position: absolute;
+		top: 280px;
+		left: 185px;
+		z-index: -1;
+	}
 
-.newsSection {
-	position: relative;
-	width: 65%;
-	height: 30%;
-	overflow: auto;
-	top: 315px;
-	left: 350px;
-	z-index: 2;
-	border-left: 3px solid RGB(237, 28, 36);
-	border-right: 3px solid RGB(237, 28, 36);
-	border-bottom: 3px solid RGB(237, 28, 36);
-	background-color: RGB(225, 225, 225);
-}
+	.backgroundLogo1 {
+		height: 250px;
+		width: 250px;
+		opacity: .35;
+	}
 
-.memberDescriptionNews {
-	font-size: 18px;
-	text-align: center;
-    height: 75px;
-	font-family: arial;
-	max-width: 93%;
-	padding-left: 20px;
-}
+	.backgroundLogoContainer2 {
+		position: absolute;
+		top: 280px;
+		right: 185px;
+		z-index: -1;
+	}
 
-.helpdeskInstructionsText {
-	position: relative;
-	text-align: center;
-	top: 350px;
-	left: 327px;
-	font-size: 70px;
-	color: RGB(237, 28, 36);
-	font-family: avantgarde-book;
-	z-index: 2;
-	border-left: 3px solid RGB(237, 28, 36);
-	border-right: 3px solid RGB(237, 28, 36);
-	border-top: 3px solid RGB(237, 28, 36);
-	width: 68%;
-	background-color: white;
-}
+	.backgroundLogo2 {
+		height: 250px;
+		width: 250px;
+		opacity: .35;
+	}
 
-.instructions {
-	width: 1451px;
-	height: 750px;
-	position: relative;
-	top: 340px;
-	right: 170px;
-	border-left: 3px solid RGB(237, 28, 36);
-	border-right: 3px solid RGB(237, 28, 36);
-	border-bottom: 3px solid RGB(237, 28, 36);
-	z-index: 2;
-}
+/* Header */
+	.headerBox {
+		position: fixed;
+		width: 100%;
+		background-color: RGB(237, 28, 36);
+		border-bottom: solid;
+		border-bottom-width: 10px;
+		border-bottom-color: RGB(169, 14, 21);
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
 
-.meetTheTeamTitle {
-	position: relative;
-	text-align: center;
-	top: -1px;
-	left: 89px;
-	font-size: 70px;
-	color: RGB(237, 28, 36);
-	font-family: avantgarde-book;
-	z-index: 2;
-	border-left: 3px solid RGB(237, 28, 36);
-	border-right: 3px solid RGB(237, 28, 36);
-	border-top: 3px solid RGB(237, 28, 36);
-	width: 90%;
-	background-color: white;
-}
+	.ktnLogo {
+		position: static;
+		width: 110px;
+		height: 100px;
+		float: left;
+		padding-left: 5px;
+		margin-left: 10px;
+		margin-top: 5px;
+		padding-bottom: 10px;
+	}
 
-.memberDescription {
-    display: inline-block;
-	width: 83%;
-	font-size: 20px;
-	overflow: auto;
-    height: 350px;
-    margin: 10px;
-	vertical-align: top;
-	padding-top: 15px;
-	font-family: avantgarde-book;
-}
+	.titleHead {
+		float: left;
+		text-justify: top;
+		font-size: 70px;
+		font-family: avantgarde-book;
+		text-align: left;
+		color: white;
+		text-shadow: 2px 2px 4px #000000;
+		padding-right: 25px;
+		margin-left: 25px;
+	}
 
-.memberContactinfo {
-	 display: inline-block;
-	 font-family: avantgarde-book;
-	 margin-left: 10px;
-	 margin-right: auto;
-	 width: 185px;
-	 height: 280px;
-	 margin-top: 8px;
-	 float: left;
-	 box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.5);
-	 background-color: RGB(237, 28, 36);
-}
+	.titleSubHead {
+		font-size: 25px;
+		font-family: avantgarde-book;
+		text-align: left;
+		padding-bottom: 1px;
+		margin-top: 15px;
+		color: white;
+	}
 
-.memberPhoto {
-    display: inline-block;
-    width: 100%;
-    height: 65%;
-}
+/* Slideshow */
+	.backgroundPic {
+		height: 450px;
+		width: 450px;
+		z-index: 0;
+	}
 
-.phoneNum {
-	text-align: center;
-	font-family: avantgarde-book;
-	color: RGB(225, 225, 225);
-	padding-top: 5px;
-	font-style: normal;
-}
+	.slideshow-container {
+		max-height: 200px;
+		max-width: 80%;
+		margin-top: 125px;
+		position: relative;
+		z-index: 1;
+		padding-bottom: 150px;
+	}
 
-.email {
-	font-family: avantgarde-book;
-	text-align: center;
-	font-size: 12px;
-	color: RGB(225, 225, 225);
-	padding-top: 15px;
-}
+	.active {
+		background-color: #717171;
+	}
 
-a:link {
-	color: RGB(192, 192, 192);
-	background-color: transparent;
-}
+	.mySlides {
+   		display: none;
+	}
 
-a:hover {
-	color: white;
-	background-color: transparent;
-}
+	.text {
+		color: RGB(237, 28, 36);
+		font-family: avantgarde-book;
+		font-size: 25px;
+		padding-top: 10px;
+		position: absolute;
+		top: 450px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
 
-a:visited {
-	color: black;
-	background-color: transparent;
-}
+	.numbertext {
+		color: #f2f2f2;
+		font-family: avantgarde-book;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
 
-.tab {
-    float: left;
-    background-color: RGB(225, 225, 225);
-	width: 15%;
-	margin-left: 5%;
-	border-left: 3px solid RGB(237, 28, 36);
-	border-bottom: 3px solid RGB(237, 28, 36);
-	border-top: 3px solid RGB(237, 28, 36);
-}
+	.dotStyles {
+		position: absolute;
+		z-index: 1;
+		margin-top: 280px;
+		left: 0;
+		width: 100%;
+	}
+	
+	.dot {
+		cursor:pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+	}
 
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: RGB(169, 14, 21);
-    padding: 22px 0px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s;
-	font-family: avantgarde-book;
-	font-size: 20px;
-}
+ 	.active, .dot:hover {
+  	background-color: #717171;
+	}
 
-.tab button:hover {
-    background-color: RGB(237, 28, 36);
-	color: RGB(225, 225, 225);
-}
+	.fade {
+  	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 5.5s;
+  	animation-name: fade;
+  	animation-duration: 5.5s;
+	}
 
-.tab button.active {
-    background-color: RGB(237, 28, 36);
-	color: RGB(225, 225, 225);
-}
+	@-webkit-keyframes fade {
+	from {opacity: 1;}
+  	to {opacity: 1;}
+	}
 
-.tabcontent {
-    float: left;
-    padding-bottom: 10px;
-    border-left: 5px dashed RGB(237, 28, 36);
-	width: 75%;
-   	height: 441px;
-	vertical-align: middle;
-	font-family: avantgarde-book;
-	background-color: RGB(225, 225, 225);
-	border-right: 3px solid RGB(237, 28, 36);
-	border-top: 3px solid RGB(237, 28, 36);
-	border-bottom: 3px solid RGB(237, 28, 36);
-} 
+/* Mission Statement */
+	.mission {
+		border: solid;
+		border-width: 3px;
+		border-color: black;
+		margin: 5px 0 10px 0;
+		padding: 0 25px 3px 25px;
+		box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+		background-color: RGB(237, 28, 36);
+		position: absolute;
+		top: 25px;
+		left: 125px;
+		width: 70%;
+		z-index: 2;
+	}
 
-.footer {
-	position: relative;
-	border-top: solid;
-	background-color: RGB(237, 28, 36);
-	width: 100%;
-	clear: left;
-	border-top-width: 10px;
-	border-top-color: RGB(169, 14, 21);
-	top: 25px;
-	padding-top: 13px;
-	padding-bottom: 15px;
-}
+	.missionTag {
+		font-family: avantgarde-book;
+		margin-bottom: 10px;
+		font-size: 25px;
+		color: white;
+		z-index:1;
+	}
 
-.footertext {
-	color: white;
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
+	.missionStatement {
+		font-family: avantgarde-book;
+		color: white;
+		z-index:1;
+	}
 
-.tooltipPutAway {
-    position: relative;
-	display: inline-block;
-    border-bottom: 3px solid RGB(237, 28, 36);
-}
+/* News Section */
+	.newsContainer {
+		position: relative;
+		top: 350px;
+		right: 150;
+		width: 1500px;
+		border: 3px solid RGB(237, 28, 36);
+		z-index: 2;
+	}
 
-.tooltipPutAway .tooltiptextPutAway {
-    visibility: hidden;
-    width: 350px;
-    background-color: RGB(237, 28, 36);
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 2;
-    opacity: 0;
-	transition: opacity 0.3s;
-    bottom: 100%;
-    left: 50%; 
-    margin-left: -60px;
-}
+	.newsSectionTitle {
+		text-align: center;
+		color: RGB(237, 28, 36);
+		font-family: avantgarde-book;
+		font-size: 70px;
+		background-color: white;
+	}
 
-.tooltipPutAway:hover .tooltiptextPutAway {
-    visibility: visible;
-    opacity: 1;
-}
+	.newsSection {
+		height: 450px;
+		overflow: auto;
+		background-color: RGB(225, 225, 225);
+	}
+
+	.memberDescriptionNews {
+		font-size: 18px;
+		text-align: center;
+    	height: 75px;
+		font-family: arial;
+		max-width: 93%;
+		padding-left: 20px;
+	}
+
+/* Helpdesk Guide */
+	.helpdeskProcess {
+		position: relative;
+		border: 3px solid RGB(237, 28, 36);
+		z-index: 2;
+		width: 1500px;
+		top: 430px;
+		right: 150px;
+	}
+
+	.helpdeskInstructionsText {
+		text-align: center;
+		font-size: 70px;
+		color: RGB(237, 28, 36);
+		font-family: avantgarde-book;
+		background-color: white;
+	}
+
+	.instructions {
+		position: relative;
+		width: 1495px;
+		height: 750px;
+	}
+/* Link stuff */
+	a.emailStyle:link {
+		color: RGB(192, 192, 192);
+		background-color: transparent;
+	}
+	
+	a.emailStyle:hover {
+		color:RGB(237, 28, 36);
+		background-color: transparent;
+		cursor: pointer;
+	}
+	
+	a.emailStyle:visited {
+		color: black;
+		background-color: transparent;
+	}
+
+/* Header Buttons */
+	.menuButtons {
+		position: absolute;
+		float: right;
+		top: 35px;
+		right: 150px;
+		font-size: 25px;
+		font-family: avantgarde-book;
+		margin-left: 205px;
+	}
+
+	.headerButtons {
+		padding: 15px;
+	}
+
+	a:link {
+		color: white;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	
+	a:visited {
+		color: white;
+		background-color: transparent;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: black;
+		background-color: transparent;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+
+/* Meet the Team Stuff */
+	.memberContainer {
+		position: relative;
+		margin-top: 400px;
+		margin-bottom: 100px;
+		width: 1500px;
+		height: 546px;
+		border: 3px solid RGB(237, 28, 36);
+		z-index: 2;
+		top: 80px;
+		right: 150px;
+	}
+
+	.memberName {
+		text-align: center;
+		padding-top: 5px;
+		font-size: 45px;
+		padding-bottom: -25px;
+		border-bottom: 1px solid RGB(237, 28, 36);
+		border-width: 2px;
+		color: RGB(237, 28, 36);
+		font-family: avantgarde-book;
+	}
+
+	.meetTheTeamTitle {
+		position: relative;
+		text-align: center;
+		font-size: 70px;
+		color: RGB(237, 28, 36);
+		font-family: avantgarde-book;
+		background-color: white;
+	}
+
+	.memberDescription {
+    	display: inline-block;
+		width: 83%;
+		font-size: 20px;
+		overflow: auto;
+    	height: 350px;
+    	margin: 10px;
+		vertical-align: top;
+		padding-top: 15px;
+		font-family: avantgarde-book;
+	}
+
+	.memberContactinfo {
+	 	display: inline-block;
+	 	font-family: avantgarde-book;
+	 	margin-left: 10px;
+	 	margin-right: auto;
+	 	width: 185px;
+	 	height: 280px;
+	 	margin-top: 8px;
+	 	float: left;
+	 	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+	 	background-color: RGB(237, 28, 36);
+	}
+
+	.memberPhoto {
+    	display: inline-block;
+    	width: 100%;
+    	height: 65%;
+	}
+
+	.phoneNum {
+		text-align: center;
+		font-family: avantgarde-book;
+		color: RGB(225, 225, 225);
+		padding-top: 5px;
+		font-style: normal;
+	}
+
+	.email {
+		font-family: avantgarde-book;
+		text-align: center;
+		font-size: 12px;
+		color: RGB(225, 225, 225);
+		padding-top: 15px;
+	}
+
+	.tab {
+   		float: left;
+    	background-color: RGB(225, 225, 225);
+		width: 214px;
+		height: 441px;
+	}
+
+	.tab button {
+    	display: block;
+    	background-color: inherit;
+    	color: RGB(169, 14, 21);
+    	padding: 22px 0px;
+    	width: 100%;
+    	border: none;
+    	outline: none;
+    	text-align: center;
+    	cursor: pointer;
+    	transition: 0.3s;
+		font-family: avantgarde-book;
+		font-size: 20px;
+	}
+
+	.tab button:hover {
+   		background-color: RGB(237, 28, 36);
+		color: RGB(225, 225, 225);
+	}
+
+	.tab button.active {
+    	background-color: RGB(237, 28, 36);
+		color: RGB(225, 225, 225);
+	}
+
+	.tabcontent {
+    	float: left;
+    	padding-bottom: 10px;
+    	border-left: 5px dashed RGB(237, 28, 36);
+		width: 1280px;
+   		height: 441px;
+		vertical-align: middle;
+		font-family: avantgarde-book;
+		background-color: RGB(225, 225, 225);
+	} 
+
+/* Footer */
+	.footer {
+		position: absolute;
+		overflow: hidden;
+		border-top: solid;
+		background-color: RGB(237, 28, 36);
+		width:100%;
+		right: 0;
+		left: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-top-width: 10px;
+		border-top-color: RGB(169, 14, 21);
+		z-index: 3;
+	}
+
+	.footertext {
+		color: white;
+		font-family: avantgarde-book;
+		font-size: 25px;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+/* Tooltip Setup */
+	.tooltipPutAway:hover .tooltiptextPutAway {
+    	visibility: visible;
+    	opacity: 1;
+	}
+
+	.tooltipPutAway {
+    	position: relative;
+		display: inline-block;
+    	border-bottom: 3px solid RGB(237, 28, 36);
+	}
+
+	.tooltipPutAway .tooltiptextPutAway {
+    	visibility: hidden;
+    	width: 350px;
+    	background-color: RGB(237, 28, 36);
+    	color: #fff;
+    	text-align: center;
+    	border-radius: 6px;
+    	padding: 5px 0;
+    	position: absolute;
+    	z-index: 2;
+    	opacity: 0;
+		transition: opacity 0.3s;
+    	bottom: 100%;
+    	left: 50%; 
+    	margin-left: -60px;
+	}
