@@ -1,0 +1,57 @@
+.redBox {
+	border: solid;
+	border-color: RGB(237, 28, 36);
+	border-width: 100%;
+	background-color: RGB(237, 28, 36);
+}
+
+.ktnLogo {
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+.titleHead {
+	font-size: 60px;
+	font-family: avantgarde-book;
+	text-align: center;
+	color: white;
+}
+
+.titleSubHead {
+	font-size: 25px;
+	font-family: avantgarde-book;
+	text-align: center;
+	padding-bottom: 3px;
+	color: white;
+}
+
+.mission {
+	border: solid;
+	border-width: 3px;
+	border-color: black;
+	margin: 25px 170px 25px 170px;
+	padding: 3px 25px 3px 25px;
+}
+
+.missionTag {
+	font-family: avantgarde-book;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.statement {
+	font-family: avantgarde-book;	
+}
+
+.groupPhoto {
+	
+}
+
+.group {
+	padding: 2% 0 0 40%;
+}
+
+ul {
+	list-style-image: 
+}
