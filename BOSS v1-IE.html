@@ -10,14 +10,67 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" />
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="BOSS v1.css">
-		<!-- [if lte IE11]>
 		<link rel="stylesheet" type="text/css" href="BOSS v1-IE.css">
-		<![endif]-->
 		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-		<script src="BOSS v1.js"></script>
+        <script src="BOSS v1.js"></script>
+        <script>
+        function openCity(evt, cityName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+            
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+            
+                // Get all elements with class="tablinks" and remove the class "active"
+                 tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active1", "");
+                }
+            
+                // Show the current tab, and add an "active" class to the link that opened the tab
+                 document.getElementById(cityName).style.display = "block";
+                 evt.currentTarget.className += " active1";
+            
+                 } 
+            
+                 
+            var slideIndex = 1;
+            var timer = null;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              clearTimeout(timer);
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              clearTimeout(timer);
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n==undefined){n = ++slideIndex}
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " active";
+              timer = setTimeout(showSlides, 4000);
+            } 
+        </script>
 	</head>
 		
 	<div class="headerBox container">
@@ -39,67 +92,106 @@
 		</div>
 	</div>
 
-	<div id="topOfPage" class="slideshow-container container">
+    <body class="container">
 
-		<div class="mySlides fade">
-			<div class="numbertext">1 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/laporte.jpg" alt="La Porte, Texas (HPT)" style="width:100%">
-			<div class="text">La Porte, Texas (HPT)</div>
-		</div>
+	<div id="topOfPage">
 
-		<div class="mySlides fade">
-			<div class="numbertext">2 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/underwood.jpg" alt="La Porte, Texas (Underwood)" style="width:100%">
-			<div class="text">La Porte, Texas (Underwood)</div>
-		</div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
+                <li data-target="#myCarousel" data-slide-to="1"</li> 
+                <li data-target="#myCarousel" data-slide-to="2"</li> 
+                <li data-target="#myCarousel" data-slide-to="3"</li> 
+                <li data-target="#myCarousel" data-slide-to="4"</li> 
+                <li data-target="#myCarousel" data-slide-to="5"</li> 
+                <li data-target="#myCarousel" data-slide-to="6"</li> 
+                <li data-target="#myCarousel" data-slide-to="7"</li> 
+                <li data-target="#myCarousel" data-slide-to="8"</li> 
+                <li data-target="#myCarousel" data-slide-to="9"</li> 
+            </ol>
 
-		<div class="mySlides fade">
-			<div class="numbertext">3 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/chambers.png" alt="Baytown, Texas" style="width:100%">
-			<div class="text">Baytown, Texas</div>
-		</div>
-		
-		<div class="mySlides fade">
-			<div class="numbertext">4 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/dallas.jpg" alt="Dallas, Texas" style="width:100%">
-			<div class="text">Dallas, Texas</div>
-		</div>
+		    <div class="carousel-inner">
 
-		<div class="mySlides fade">
-			<div class="numbertext">5 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/batonrouge.jpg" alt="Baton Rouge, Louisiana" style="width:100%">
-			<div class="text">Baton Rouge, Louisiana</div>
-		</div>
+			    <div class="item active">
+			        <img class="backgroundPic" src="SitePhotos/laporte.jpg" alt="La Porte, Texas (HPT)" style="width:100%">
+			        <div class="carousel-caption">
+                        <p>La Porte, Texas (HPT)</p>
+                    </div>
+                </div> 
 
-		<div class="mySlides fade">
-			<div class="numbertext">6 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/norfolk.jpg" alt="Norfolk, Virginia" style="width:100%">
-			<div class="text">Norfolk, Virginia</div>
-		</div>
+		        <div class="item">
+                    <img class="backgroundPic" src="SitePhotos/underwood.jpg" alt="La Porte, Texas (Underwood)" style="width:100%">
+                    <div class="carousel-caption">
+                        <p>La Porte, Texas (Underwood)</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img class="backgroundPic" src="SitePhotos/chambers.png" alt="Baytown, Texas" style="width:100%">
+                    <div class="carousel-caption">
+                        <p>Baytown, Texas</p>
+                    </div>
+                </div>
 
-		<div class="mySlides fade">
-			<div class="numbertext">7 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/edmonton.jpg" alt="Edmonton, Canada" style="width:100%">
-			<div class="text">Edmonton, Canada</div>
-		</div>
+                <div class="item">
+                    <img class="backgroundPic" src="SitePhotos/dallas.jpg" alt="Dallas, Texas" style="width:100%">
+                    <div class="carousel-caption">
+                        <p>Dallas, Texas</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="backgroundPic" src="SitePhotos/batonrouge.jpg" alt="Baton Rouge, Louisiana" style="width:100%">
+                    <div class="carousel-caption">
+                        <p>Baton Rouge, Louisiana</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="backgroundPic" src="SitePhotos/norfolk.jpg" alt="Norfolk, Virginia" style="width:100%">
+                    <div class="carousel-caption">
+                        <p>Norfolk, Virginia</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="backgroundPic" src="SitePhotos/edmonton.jpg" alt="Edmonton, Canada" style="width:100%">
+                    <div class="carousel-caption">
+                        <p>Edmonton, Canada</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="backgroundPic" src="SitePhotos/silao.jpg" alt="Silao, Mexico" style="width:100%">
+                    <div class="carousel-caption">
+                        <p>Silao, Mexico</p>
+                    </div>
+                </div>
 	
-		<div class="mySlides fade">
-			<div class="numbertext">8 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/silao.jpg" alt="Silao, Mexico" style="width:100%">
-			<div class="text">Silao, Mexico</div>
-		</div>
+                <div class="item">
+                    <img class="backgroundPic" src="SitePhotos/tpx.png" alt="TPX, Mexico" style="width:100%">
+                    <div class="carousel-caption">
+                        <p>TPX, Mexico</p>
+                    </div>
+                </div>
 		
-		<div class="mySlides fade">
-			<div class="numbertext">9 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/tpx.png" alt="TPX, Mexico" style="width:100%">
-			<div class="text">TPX, Mexico</div>
-		</div>
+                <div class="item">
+                    <img class="backgroundPic" src="SitePhotos/Coatzacoalcos.jpg" alt="Coatzacoalcos, Mexico" style="width:100%">
+                    <div class="carousel-caption">
+                        <p>Coatzacoalcos, Mexico</p>
+                    </div>
+                </div>
 
-		<div class="mySlides fade">
-			<div class="numbertext">10 / 10</div>
-			<img class="backgroundPic" src="SitePhotos/Coatzacoalcos.jpg" alt="Coatzacoalcos, Mexico" style="width:100%">
-			<div class="text">Coatzacoalcos, Mexico</div>
-		</div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
 	
 		<div class="mission">
 			<div class="missionTag"><b>Our Mission</b></div>
@@ -109,22 +201,7 @@
 		</div>	
 	</div>
 	
-	<br>
-	
-	<div class="dotStyles" style="text-align:center">
-		<span class="dot" onclick="currentSlide(1)"></span> 
-		<span class="dot" onclick="currentSlide(2)"></span> 
-		<span class="dot" onclick="currentSlide(3)"></span> 
-		<span class="dot" onclick="currentSlide(4)"></span> 
-		<span class="dot" onclick="currentSlide(5)"></span> 
-		<span class="dot" onclick="currentSlide(6)"></span> 
-		<span class="dot" onclick="currentSlide(7)"></span> 
-		<span class="dot" onclick="currentSlide(8)"></span> 
-		<span class="dot" onclick="currentSlide(9)"></span> 
-		<span class="dot" onclick="currentSlide(10)"></span> 
-	</div> 
 
-	<body class="container">
 		<span id="newsEvents"></span>
 		<div class="newsContainer">
 			<p class="newsSectionTitle">
@@ -134,26 +211,27 @@
 				<div class="memberDescriptionNews">
 					<p style="text-align: center">At Katoen Natie, our <strong>people</strong> make the difference, and 
 						<span style="color:red"><strong>BOSS</strong></span> team is helping improve things for the 
-						<strong>people</strong>, one project at a time!. Here is a list of current major projects!
+						<strong>people</strong>, one project at a time! Here is a list of our current major projects:
 					</p>
 					<ul>
-						<li>eOrder is back online and almost every site and customer is using it!
+						<li>eOrder is online and almost every site and customer is using it!
 						We will continue to monitor for any issues, but so far everything is looking
-						great!
+						good. We another step closer to paperless!
 						</li>
 						<br />
-						<li>Invoicing in Mexico is getting a complete overhaul. Mariel of sales and our very own
-						Alexis Artiga has been working hard to clean up the database and get things organized
+						<li>Invoicing in Mexico is getting a complete overhaul. Mariel Smith, of sales, and our very own
+						Alexis Artiga have been working hard to clean up the database and get things organized
 						for a better and smoother invoicing process.
 						<br />
 						</li>
-						<p style="text-align: center"><em>*The goal is for all the sites to get a good clean up and overhaul <br /> so that the invoicing
-						process can be better and faster for everyone.</em></p>
+						<p style="text-align: center"><em>The invoicing overhaul will be for all the sites in the future so that the invoicing
+						process can be <br /> better and faster for everyone!</em></p>
 						<br />
 						<li>Dashboards are growing! A new supplies dashboard has been created and an invoicing dashboard
-						is soon to join! Storing and displaying large amounts of useful and relevant data is important
+                        is soon to come. 
+                        <br /> <em>Storing and displaying large amounts of useful and relevant data is important
 						to better productivity and our ability to asses where issues lie. Take some time to look through
-						the dashboard system, you might find data on things you never knew before!
+						the dashboard system, you might find data on things you never knew before!</em>
 						</li>
 						<br />
 						<li>Exxonlubes and Exxonbutyl Rubber are getting some updates to their process. Butyl has started
@@ -292,10 +370,12 @@
 				</div>
 				<div class="memberContactinfo">
 					<img class="memberPhoto" src="TeamPhotos/dianad.jpg" alt="Diana Delafuente" />
-					<div class="phoneNum">Desk: (123) 456 - 7890</div>
-					<div class="phoneNum">Cell: (098) 765 - 4321</div>
-					<!-- code adjusted to keep bots from spamming the email addresses -->
-					<div class="email"><a class="emailStyle" href="mailto:teammember%40company%2edomain">teammember@company.com</a></div>
+                    <div class="contactInfoContainer">
+                        <div class="phoneNum">Desk: (123) 456 - 7890</div>
+					    <div class="phoneNum">Cell: (098) 765 - 4321</div>
+					    <!-- code adjusted to keep bots from spamming the email addresses -->
+                        <div class="email"><a class="emailStyle" href="mailto:teammember%40company%2edomain">teammember@company.com</a></div>
+                    </div>
 				</div>
 			</div> 
 		
